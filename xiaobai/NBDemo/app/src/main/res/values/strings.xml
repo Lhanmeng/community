@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">电脑小白</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">设置</string>
+
+
+
+<!--    <string name="login_register_link">没有帐号？ <a href="#" mce_href="#">注册</a></string>-->
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">下一步</string>
+    <string name="skip">跳过</string>
+    <string name="start">进入</string>
+
+    <string name="slide_1_title">电脑使用中总是遇到问题，
+        怎么办？</string>
+    <string name="slide_2_title">不想出门维修 (；′⌒`)</string>
+    <string name="slide_3_title">    那就试试“电脑小白”吧n(*≧▽≦*)n</string>
+    <string name="play_again">解答你的电脑疑惑吧</string>
+
+</resources>

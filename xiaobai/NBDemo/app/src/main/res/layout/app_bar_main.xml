@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+       <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    -->
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:popupTheme="@style/AppTheme.PopupOverlay" />
+<!--    </android.support.design.widget.AppBarLayout>-->
+
+    <LinearLayout
+        android:id="@+id/fragmentRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorWhite"
+        android:id="@+id/bottomList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout style="@style/linaer_bottom" >
+            <RadioButton
+                android:id="@+id/ra_shouye_bt"
+                style="@style/rbt_bottom"
+                android:drawableTop="@drawable/sindex"
+                android:text="首页"
+                android:textColor="@color/colorPrimary"
+                android:checked="false" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linaer_bottom" >
+
+            <RadioButton
+                android:id="@+id/ra_collect_bt"
+                style="@style/rbt_bottom"
+                android:drawableTop="@drawable/issue"
+                android:text="问题"
+                android:checked="false" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linaer_bottom" >
+
+            <RadioButton
+                android:id="@+id/ra_wo_bt"
+                style="@style/rbt_bottom"
+                android:drawableTop="@drawable/swo"
+                android:text="我" />
+        </LinearLayout>
+    </LinearLayout>
+ <!--   </RelativeLayout>-->
+    <!--
+        <com.jude.rollviewpager.RollPagerView
+            android:id="@+id/roll_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="248dp"
+            app:rollviewpager_play_delay="3000" />
+
+      <include layout="@layout/content_main" />-->
+
+    <!--    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@android:drawable/ic_input_add" />-->
+<!--</android.support.design.widget.CoordinatorLayout>-->
+</RelativeLayout>

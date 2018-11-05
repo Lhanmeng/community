@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorMain">#FF4081</color>
+    //cardview 下边框
+    <color name="shape_line">#ffcccccc</color>
+    //退出登录
+    <color name="Red">#f9594b</color>
+    //tob 颜色
+    <color name="colorTbar">#3F51B5</color>
+    <color name="backgroud">#f2f2f2</color>
+
+    <!-- Screens background color-->
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#20d2bb</color>
+    <color name="bg_screen3">#3395ff</color>
+    <color name="bg_screen4">#c873f4</color>
+    <color name="bg_screen5">#f59825</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+
+
+    <!--圆形头像边框颜色-->
+    <color name="dark">#FF222222</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+    </array>
+
+
+    <color name="fackbook">#3b5999</color>
+    <color name="font_white">#ffffffff</color>
+    <color name="font_white_disable">#7fffffff</color>
+    <color name="main_font_color">#9a9a9a</color>
+    <color name="layout_bg_color">#f8f8f8</color>
+    <!--<color name="colorWhite">#f2f0f0</color>-->
+    <color name="colorpressed_btn">#6091be</color>
+    <color name="black">#000000</color>
+    <!--<color name="colorMain">#1f6fb9</color>-->
+    <color name="text_color">#ff333333</color>
+    <!--<color name="shape_line">#ffcccccc</color>-->
+    <color name="button_selected">#FF8F59</color>
+
+    <color name="detail_title">#2c2c2c</color>
+    <color name="detail_time">#bfbfbf</color>
+    <color name="detail_content">#1c1c1c</color>
+    <color name="divide">#f2f2f2</color>
+    <color name="comment_user">#353535</color>
+    <color name="comment_time">#969696</color>
+    <color name="comment_content">#353535</color>
+
+    <color name="skin_blue">#0d6593</color>
+    <color name="skin_pink">#FFB5C5</color>
+    <color name="skin_yellow">#EEEE00</color>
+    <color name="skin_sblue">#B0E0E6</color>
+    <color name="red">#ff1111</color>
+    <color name="gray">#e7e5e5</color>
+</resources>

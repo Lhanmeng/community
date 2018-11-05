@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/release"
+            android:icon="@drawable/release"
+            android:title="问问题" />
+        <item
+            android:id="@+id/search"
+            android:icon="@drawable/search"
+            android:title="搜索" />
+        <item
+            android:id="@+id/collection"
+            android:icon="@drawable/collect"
+            android:title="收藏" />
+
+    </group>
+
+    <item android:title="常见文档">
+        <menu>
+            <item
+                android:id="@+id/book"
+                android:icon="@drawable/book"
+                android:title="常见故障文档" />
+
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+
+            <!--<item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="分享" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="发送" />-->
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/setting"
+                android:title="设置" />
+        </menu>
+    </item>
+
+</menu>

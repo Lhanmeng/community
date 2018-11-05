@@ -1,0 +1,173 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.LoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/side_nav_bar"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImage"
+                android:layout_width="84dp"
+                android:layout_height="59dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="90dp"
+                android:src="@drawable/dot_no" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="ding"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@drawable/leba_shape_line" />
+
+
+        <LinearLayout
+            android:id="@+id/me_update"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/boder"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:padding="6dp"
+                android:text="个人资料"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/enter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_issue"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/boder"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:padding="6dp"
+                android:text="我的问题"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/enter" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/my_solve"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/boder"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:padding="6dp"
+                android:text="我的回答"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/enter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/collection"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/boder"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:padding="6dp"
+                android:text="我的收藏"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/enter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,192 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.LoginActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:orientation="horizontal"
+            android:background="@color/colorTbar"
+            android:id="@+id/linearLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_marginTop="15dp"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/back"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="22sp"
+                android:text="设置"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/side_nav_bar"
+            android:layout_height="200dp"
+            android:weightSum="1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="84dp"
+                android:layout_height="59dp"
+                android:id="@+id/username_image"
+                android:src="@drawable/dot_no"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.31" />
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@drawable/leba_shape_line"/>
+
+
+        <LinearLayout
+            android:id="@+id/pwdupdate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/boder"
+            android:orientation="horizontal"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:text="登录密码修改"/>
+            <ImageButton
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/enter"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/boder"
+            android:orientation="horizontal"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:text="意见反馈"/>
+            <ImageButton
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/enter"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/huanfu"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/boder"
+            android:orientation="horizontal"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:text="换肤"/>
+            <ImageButton
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/enter"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/boder"
+            android:orientation="horizontal"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:text="清除缓存"/>
+            <ImageButton
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/enter"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/quit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/boder"
+            android:orientation="horizontal"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+               android:layout_marginLeft="140dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/Red"
+                android:textSize="18sp"
+                android:text="退出登录"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
