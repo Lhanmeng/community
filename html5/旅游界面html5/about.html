@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>  景点</title>
+<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./js/jquery.min.js"></script>
+ <!-- Custom Theme files -->
+<link href="./css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+ <!---- start-smoth-scrolling---->
+<script type="text/javascript" src="./js/move-top.js"></script>
+<script type="text/javascript" src="./js/easing.js"></script>
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+<!----- webfonts ------>
+	<link href='http://fonts.useso.com/css?family=Carrois+Gothic:400,100,600,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+<!----- webfonts ------>
+<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+
+        <script type="text/javascript">
+	<!--
+		var arr = ["辽宁省","吉林省","广东省" ] ;
+		  
+		  arr["辽宁省"] = ["沈阳市","大连市","抚顺市","朝阳市"] ;
+		  arr["吉林省"] = ["长春市","四平市","白山市","松原市 "] ;
+		  arr["广东省"] = ["深圳市","广州市","东莞市","珠海市"] ;
+
+		  function init(){
+			  //填充国家
+			  fillData(arr,"country") ;
+
+			   //填充省市
+			  fillData(arr[arr[0]],"province") ;
+			    //填充地区
+			 // fillData(arr[arr[arr[0]][0]],"area") ;
+		  }
+
+		  function fillData(arr,id){
+			    //清空select选项
+			  document.getElementById(id).options.length = 0 ;
+			  //添加选项
+			  for(var i = 0 ;i<arr.length ;i++){
+				  //创建一个option对象
+				  //第一种
+				 /* var option = new Option() ;
+				  option.text = arr[i] ;
+				  option.value = arr[i] ;*/
+
+				  //第二种
+				  var option = new Option(arr[i],arr[i]) ;
+
+				  //将option对象添加到select中
+				  document.getElementById(id).options.add(option) ;
+			  }
+		  }
+
+		  function changePro(coun){
+			
+			  //添加省市
+			  fillData(arr[coun],"province") ;
+		  }
+
+	</script>
+
+	<!----//End-top-nav-script---->
+</head>
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<!-- logo -->
+			<div class="logo">
+				<a href="index.html"><img src="./images/logo.png" title="carwash" /></a>
+			</div>
+			<!-- /logo -->
+			<!-- top-nav -->
+		<div class="top-nav">
+			<span class="menu"> </span>
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li class="active"><a href="about.html">景点</a></li>
+					<li><a href="projects.html">旅游攻略</a></li>
+					<li><a href="contact.html">登录|注册</a></li>
+						<div class="clearfix"> </div>
+				</ul>
+		</div>
+		<!-- script-for-nav -->
+				<script>
+					$(document).ready(function(){
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(1000);
+						});
+					});
+				</script>
+		<!-- script-for-nav -->
+		<!-- /top-nav -->
+			<div class="clearfix"> </div>
+		</div>
+		<!-- /header -->
+	</div>
+	<!----- //End-banner---->
+		<!----- /start-about---->
+		
+
+	<!----- //End-banner---->
+		<!----- /start-about---->
+			  	 <div class="project-info">
+			 	 <div class="container">
+		  			<div class="row">
+		  	   			<div class="col-md-8 Project-works">
+				  	   	   <div class="projects">
+				  	   	    
+				  	   	      <div class="project_grid">
+				  	   	      <a href=""><h3>景点门票</h3></a>
+				  	   	      <a href="#">
+					  	   	   	  <div class="project_box">
+					  	   	   	  	<a href="www.baidu.com"><img src="./images/a1.jpg" width="177" height="152"></a>
+					  	   	   	  	<a href="#"><img src="./images/a2.jpg" width="177" height="152"></a>
+					  	   	   	  	<p>圣亚<em>￥100</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;金石滩<em>￥140</em></p>
+					  	   	   	  	
+					  	   	   	  		
+					  	   	   	  	
+					  	   	   	  	<div class="clearfix"> </div>
+					  	   	   	  </div>
+					  	   	   	  
+
+					  	   	   	  <div class="project_box">
+					  	   	   	    <img src="./images/a11.jpg" width="177" height="152">
+					  	   	   	  	<img src="./images/a12.jpg" width="177" height="152">
+					  	   	   	  		<p>发现王国<em>￥180</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;香洲旅游度假区<em>￥168</em></p>
+					  	   	   	  		
+					  	   	   	  	<div class="clearfix"> </div>
+					  	   	   	  </div>
+					  	   	   	 
+					  	   	   	   <div class="project_box">
+					  	   	   	  	
+					  	   	   	  <a href="">	<img src="./images/a15.jpg" width="177" height="152"></a>
+					  	   	   	  <a href="">	<img src="./images/a16.jpg" width="177" height="152"></a>
+					  	   	   	  		<p>槐之乡庄园<em>￥80</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;旅顺蝶恋花蝴蝶园<em>￥35</em></p>
+					  	   	   	  	
+					  	   	   	  	<div class="clearfix"> </div>
+					  	   	   	  </div>
+				  	   	   	  </div>
+
+				  	   	   	  <div class="project_grid">
+				  	   	      <h3>&nbsp;&nbsp;</h3>
+				  	   	     
+					  	   	   	  <div class="project_box">
+					  	   	   	  	
+					  	   	   	  <a href="">	<img src="./images/a9.jpg" width="177" height="152"></a>
+					  	   	   	  <a href="">	<img src="./images/a10.jpg" width="177" height="152"></a>
+					  	   	   	  		<p>大连森林动物园<em>￥95</em>&nbsp;&nbsp;&nbsp;&nbsp;老虎滩海洋公园<em>￥140</em></p>
+					  	   	   	  	
+					  	   	   	  	<div class="clearfix"> </div>
+					  	   	   	  </div>
+					  	   	   	  
+					  	   	   	  <div class="project_box">
+					  	   	   	    <a href=""><img src="./images/a13.jpg" width="177" height="152"></a>
+					  	   	   	    <a href=""><img src="./images/a14.jpg" width="177" height="152"></a>
+					  	   	   	  		<p>白玉山景区<em>￥36</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;闯关东影视基地<em>￥35</em></p>
+					  	   	   	  		
+					  	   	   	  	<div class="clearfix"> </div>
+					  	   	   	  </div>
+
+					  	   	    <div class="project_box">
+					  	   	   	    <a href=""><img src="./images/a17.jpg" width="177" height="152"></a>
+					  	   	   	  	<a href=""><img src="./images/a18.jpg" width="177" height="152"></a>
+					  	   	   	  		<p>棒棰岛<em>￥20</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;冰峪沟<em>￥120</em></p>	
+					  	   	   	  	<div class="clearfix"> </div>
+					  	   	   	  </div>
+				  	   	   </div>
+                           <a href="#" class="project_btn">More</a>
+				  	   	   
+		  	  		 	</div>
+
+                          </div>
+
+                             <form>
+						    <div class="col-md-4 company-right">
+					        	<div class="company_ad">
+							     		<h3>一键排行程:</h3>
+			      						<address>
+			      						<p> 我在&nbsp;&nbsp;
+			      						
+	 		      						 <body onload = "init()">
+	                           省：<select id = "country" onchange = "changePro(this.value)"></select></br>
+	                           &nbsp;&nbsp;&nbsp;&nbsp; 市：<select id = "province" onchange = "changeArea(this.value)"></select>
+                                        </body>
+					                 </p>						
+					                     <!-- 省市联动/p>
+									   		<p>传真: 010-6543-210</p>
+									 	 	 -->
+							   			</address>
+							   			<p>我想去：&nbsp;
+										 <select >
+                                    <option value=""></option>
+                                    <option >老虎滩</option>
+                                    <option >圣亚</option>
+                                    <option >发现王国</option>
+                                    <option >莲花观景台</option>
+                                </select> </p>
+                                 <p>玩几天：&nbsp;   <input type="number">  </p>
+                                 <p>出发日期： <input size="16" type="date" value="12-02-2012" name="regdate"></p>
+                                 </br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp; <input type="button" value="排行程">
+							   		</div>
+							   		<div class="contact-icons">
+						    	</div>
+						    	</form>
+
+					        	<div class="company_ad">
+							     		<h3>大连旅游指南:</h3>
+							     		<img src="./images/a3.jpg" >
+							     		</br>
+							     		<input name="submit" type="submit" value="下载">	
+  			     			
+		                  		 </div>
+					        	<div class="company_ad">
+							     		<h3>大连旅游宣传片:</h3>
+							     		<video src="./images/xltfn.mp4"  controls="controls"  width="277" height="182">	</video>	
+							     		
+		  			            </div> 
+		  		        </div> 	
+		  		<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!----- /start-services---->
+			 <div id="services" class="services">
+	 			<div class="container">
+	 					<div class="About-head">
+	 						<h2>来一场说走就走的旅行</h2>
+	 					</div>
+		 		
+	 			</div>
+			 </div>
+	<!----- //End-services---->
+		<!----- /start-footer---->
+				<div class="footer">
+					<div class="container">
+						<div class="copy-right">
+							<p>&copy; DaLian Traveling <a href="" target="_blank" ></a> </p>
+						</div>
+						</div>								
+					</div>
+					<!----- //End-footer---->
+							<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+</body>
+</html>

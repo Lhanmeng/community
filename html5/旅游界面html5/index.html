@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>主页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><!-- 广告 -->
+<script type="text/javascript" src="./js/moveobj.js"> </script>
+<script type="text/javascript">
+
+var flyimage1, flyimage2, flyimage3
+
+function pagestart(){
+
+
+ flyimage1=new Chip("flyimage1",47,68);
+ flyimage2=new Chip("flyimage2",47,68);
+ flyimage3=new Chip("flyimage3",47,68);
+
+
+movechip("flyimage1");
+movechip("flyimage2");
+movechip("flyimage3");
+
+}
+
+if (window.addEventListener)
+window.addEventListener("load", pagestart, false)
+else if (window.attachEvent)
+window.attachEvent("onload", pagestart)
+else if (document.getElementById)
+window.onload=pagestart
+
+</script>  <!-- 广告 -->
+
+<style type="text/css">
+.black_overlay{    
+ display: none;    
+ position: absolute;top: 0%;    
+ left: 0%;    
+ width: 100%;    
+ height: 100%;    
+ background-color: #3366FF;    
+ <a href="" target="_blank" class="baidu-highlight">z-index</a>:1001;    
+ -moz-opacity: 0.8;    
+ opacity:.80;    
+ filter: alpha(opacity=80);      
+}    
+.white_content{    
+ display: none;    
+ position: absolute;    
+ top: 100%;  left: 60%;    
+ width: 33%;    
+ height: 50%;    
+ padding: 16px;    
+ border: 16px solid blue;    
+ background-color: white;    
+ <a href="" target="_blank" class="baidu-highlight">z-index</a>:1002;    
+overflow:auto    
+}    
+</style>
+
+
+
+<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./js/jquery.min.js"></script>
+ <!-- Custom Theme files -->
+<link href="./css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" charset="UTF-8"  content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+ <!---- start-smoth-scrolling---->
+<script type="text/javascript" src="./js/move-top.js"></script>
+<script type="text/javascript" src="./js/easing.js"></script>
+		
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+<!----- webfonts ------>
+	<link href='http://fonts.useso.com/css?family=Carrois+Gothic:400,100,600,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+<!----- webfonts ------>
+<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+	<!----//End-top-nav-script---->
+</head>
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<!-- logo -->
+			<div class="logo">
+				<a href="index.html"><img src="./images/logo.png" title="carwash" /></a>
+			</div>
+			<!-- /logo -->
+			<!-- top-nav -->
+		<div class="top-nav">
+			<span class="menu"> </span>
+				<ul>
+				    <li class="active"><a href="index.html"  target="_blank">首页</a></li>
+					<li><a href="about.html"   target="_blank">景点</a></li>
+					<li ><a href="projects.html" target="_blank">旅游攻略</a></li>
+					<li><a href="contact.html" target="_blank">登录|注册</a></li>
+
+						<div class="clearfix"> </div>
+				</ul>
+		</div>
+		<!-- script-for-nav -->
+				<script>
+				<div  onclick="confirm('确认信息') ?alert('true');:alert('false')">Please click to confirm!</div>
+					$(document).ready(function(){
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(1000);
+						});
+					});
+				</script>
+		<!-- script-for-nav -->
+		<!-- /top-nav -->
+			<div class="clearfix"> </div>
+		</div>
+  
+  <DIV ID="flyimage1" STYLE="position:absolute; left: -500px; width:47; height:68;">
+<A HREF="www.baidu.com"><IMG SRC="images/1.gif" BORDER=0></a>
+</DIV>
+
+<DIV ID="flyimage2" STYLE="position:absolute; left: -500px; width:47; height:68;">
+<A HREF="www.baidu.com"><IMG SRC="images/2.gif" BORDER=0></a>
+</DIV>
+
+<DIV ID="flyimage3" STYLE="position:absolute; left: -500px; width:47; height:68;">
+<A HREF="www.baidu.com"><IMG SRC="images/3.gif" BORDER=0></a>
+</DIV>
+<!-- 广告 -->
+		<!-- /header -->
+	</div>
+
+       
+
+
+
+		<!-- banner -->
+			<div class="banner">
+				<!-- banner-->
+			<!-- 	 <div class="slider-caption">
+					          	<h1>I Like To Ask The Same Question Many Many Times</h1>
+					         	<div class="learn-button">
+			          			<a class="slide-btn" href="#">Ok ask me</a>
+			          		</div>
+
+				 </div> -->
+				 <!--//banner -->
+
+					<div class="img-grids">
+						 <h3>Places You Must Visit In Your Lifetime</h3>       
+						<div class="top-grids">
+						    <a href="about.html">
+								<div class="col-md-2 grid1">
+		                              <img src="./images/i1.jpg" alt="">
+		                            	<h3>俄罗斯风情街</h3>
+		                        </div>
+		                    </a>
+		                    <a href="about.html">   
+		                        <div class="col-md-2 grid1">
+		                              <img src="./images/i2.jpg" alt="">
+		                           	  <h3>日本风情街</h3>                                                  
+		                		 </div>
+		                    </a> 
+		                    <a href="about.html">	 
+		                		 <div class="col-md-2 grid1">
+		                              <img src="./images/i4.jpg" alt="">
+		                           	  <h3>棒棰岛</h3>                                                  
+		                		 </div>
+		                    </a>	
+		                		 <div class="col-md-2 grid1">
+		                              <img src="./images/img-4.png" alt="">
+		                           	  <h3>星海广场</h3>                                                  
+		                		 </div>
+		                		 <div class="col-md-2 grid1">
+		                              <img src="./images/img-5.png" alt="">
+		                           	  <h3>金石滩</h3>                                                  
+		                		 </div>
+	                            <div class="clearfix"> </div>
+						</div>
+						<div class="bottom-grids">
+								<div class="col-md-2 grid2">
+		                              <img src="./images/img-6.png" alt="">
+		                            	<h3>星海公园</h3>
+		                        </div>
+		                        <div class="col-md-2 grid2">
+		                              <img src="./images/img-7.png" alt="">
+		                           	  <h3>植物园</h3>                                                  
+		                		 </div>
+		                		 <div class="col-md-2 grid2">
+		                              <img src="./images/img-8.png" alt="">
+		                           	  <h3>劳动公园</h3>                                                  
+		                		 </div>
+		                		 <div class="col-md-2 grid2">
+		                              <img src="./images/img-9.png" alt="">
+		                           	  <h3>温泉山庄</h3>                                                  
+		                		 </div>
+		                		 <div class="col-md-2 grid2">
+		                              <img src="./images/img-10.png" alt="">
+		                           	  <h3>黑石礁</h3>                                                  
+		                		 </div>
+
+		                		 
+	                            <div class="clearfix"> </div>
+						</div>
+					 <div class="clearfix"> </div>
+					</div>
+				</div>
+			<!-- slider -->			
+	<!----- //End-banner---->
+
+	
+			
+ 
+	<!----- /start-services---->
+			 <div id="services" class="Services">
+	 			<div class="container">
+
+	 					<div class="service-head">
+	 						<h2> <a href="#" onclick="alert('内容');">浪漫之都</a>&nbsp;&nbsp;&nbsp;&nbsp; 
+	 						<input type="button" text="弹出层"  value="中国大连" onClick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"> </h2>
+	 						 <div id="light" class="white_content">    
+                               <a href="#" onClick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" 
+                               style="color:black; href=""      class="baidu-highlight">关闭弹窗</a>   
+                               <div style="width:515px;height:280px;border:#ccc solid 1px;" id="dituContent">
+                          欢迎访问大连旅游旅游指南</br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="">
+                          大连</a>，别称滨城，旧名达里尼、青泥洼。位于辽东半岛南端，地处黄渤海之滨，
+                          背依中国东北腹地，与山东半岛隔海相望。。是中国东部沿海重要的经济、贸易、港口、工业、旅游城市。</br>&nbsp;&nbsp;&nbsp;&nbsp;
+                         大连历史悠久，早在6000年前，祖先就开发了大连，1899年开始称大连。第一次鸦片战争、第二次鸦片战争期间，英军对大连地区进行了侵扰。
+                         作为甲午战争和   日俄战争的主要战场，大连在近代史上曾遭受两次大的战争劫，沦为俄、日殖民地近半个世纪。</br>&nbsp;&nbsp;&nbsp;&nbsp;
+                            大连环境绝佳，气候冬无严寒，夏无酷暑，有“东北之窗”“ 北方明珠 ”“浪漫之都”之称，是中国东北对外开放的窗口和最大的港口城市；先后获得国际花园城市  、中国最佳旅游城市 、国家环保模范城市等荣誉。
+                            </br>&nbsp;&nbsp;&nbsp;&nbsp;
+                          大连是世界经济论坛（WEF）夏季达沃斯的常驻举办城市，拥有中国最大的农产品期货交易所，全球第二大大豆期货市场：大连商品交易所。
+                          2014年6月，中国第十个国家级新区大连金普新区正式设立。
+                       </div>    		
+	 					</div>	
+	 								
+	 					<div class="service-grids">
+	
+</div> 
+
+
+
+
+</div>
+
+			 <div id="services" class="services">
+	 			<div class="container">
+	 					<div class="contact-bottom">
+	 						<h2><a href="#" onclick="alert('内容');">浪漫之都<来一场说走就走的旅行</a> </h2>
+	 						<!-- <embed src="./images/1.mp3" hidden="true" autostart="true" loop="true">
+		                	<bgsound  src=" ./images/1.mp3"  loop=”1” ></bgsound> -->
+		                	<audio  src="./images/1.mp3"  autoplay="autoplay"  width="277" height="182">	</audio>
+					</div>
+		 			
+		 				<div class="clearfix"> </div>
+		 			</div>
+	 			</div>
+			 </div>
+		 			<!-- <div class="service-grids">
+			 				<div class="col-md-3 service-grid">
+			 					<i class="icon1"> </i>
+			 					<h3>Sites the world</h3>
+			 				</div>
+			 					<div class="col-md-3 service-grid">
+			 					<i class="icon2"> </i>
+			 					<h3>Shopping</h3>
+			 				</div>
+			 				<div class="col-md-3 service-grid">
+			 					<i class="icon3"> </i>
+			 					<h3>Photography</h3>
+			 				</div>
+			 				<div class="col-md-3 service-grid">
+			 					<i class="icon4"> </i>
+			 					<h3>Find the best</h3>
+			 				</div>
+		 				<div class="clearfix"> </div>
+		 			</div> -->
+	 			</div>
+			 </div>
+	<!----- //End-services---->
+		<!----- /start-footer---->
+				<div class="footer">
+						<div class="container">
+							<div class="copy-right">
+							<p>&copy; DaLian Traveling <a href="" target="_blank" ></a> </p>	
+							</div>	
+						</div>							
+					</div>
+					<!----- //End-footer---->
+						<script type="text/javascript">
+									$(document).ready(function() {
+									
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+					<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+
+	</body>
+</html>
