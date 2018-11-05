@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:background="@color/index"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="188dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/title"
+            android:textSize="25sp"
+            android:text="消息"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:text="暂时无消息"
+        android:layout_weight="0.19" />
+
+</LinearLayout>

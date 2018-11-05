@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:background="@color/index"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:background="@drawable/back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/title"
+            android:textSize="25sp"
+            android:text="设置"/>
+    </LinearLayout>
+
+
+
+    <!--<LinearLayout
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/boder"
+        android:orientation="horizontal"
+        android:layout_below="@+id/community"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:text="修改密码"/>
+        <ImageButton
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/enter"/>
+    </LinearLayout>
+-->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/leba_shape_line"/>
+    <LinearLayout
+        android:id="@+id/et_password"
+        style="@style/leba_bg_single_layout">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:text="修改密码"/>
+        <ImageButton
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/enter"/>
+    </LinearLayout>
+    <!--   </LinearLayout>-->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/leba_shape_line"/>
+
+    <LinearLayout
+        android:id="@+id/et_skin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/boder"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:text="换肤"/>
+        <ImageButton
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/enter"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/leba_shape_line"/>
+    <LinearLayout
+        android:id="@+id/exit"
+        style="@style/leba_bg_single_layout">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/red"
+            android:text="退出登录"/>
+
+    </LinearLayout>
+    <!--   </LinearLayout>-->
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/leba_shape_line"/>
+   <!-- <LinearLayout
+        android:id="@+id/exit"
+        android:background="@drawable/boder"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="@color/red"
+            android:text="退出登录"/>
+
+    </LinearLayout>
+-->
+</LinearLayout>

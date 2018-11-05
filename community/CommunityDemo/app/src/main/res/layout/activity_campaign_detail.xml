@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:background="@color/index"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+        <ImageButton
+            android:onClick="Back"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:background="@drawable/back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/title"
+            android:textSize="25sp"
+            android:text="活动详情" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout3">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="80dp"
+            android:layout_height="90dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/campaign_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="活动名"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/h_time"/>
+                <TextView
+                    android:id="@+id/campaign_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="活动时间"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/h_place"/>
+                <TextView
+                    android:id="@+id/campaign_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="活动地点:"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/h_leader"/>
+                <TextView
+                    android:id="@+id/h_leader"
+                    android:layout_width="match_parent"
+                    android:layout_height="29dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="活动负责人:"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.78"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/linearLayout4">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="15dp"
+                android:text="承办社团："/>
+            <TextView
+                android:id="@+id/h_groupname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="社团名"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="15dp"
+            android:text="活动介绍："/>
+        <TextView
+            android:id="@+id/campaign_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  活动介绍内容"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/rv_comments"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout4">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="全部评价"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@drawable/leba_shape_line"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:id="@+id/bottomList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout style="@style/linaer_bottom" >
+            <RadioButton
+                android:id="@+id/ra_shouye_bt"
+                style="@style/rbt_bottom"
+                android:drawableTop="@drawable/h_comment"
+                android:text="评论"
+                android:checked="false" />
+        </LinearLayout>
+
+     <!--   <LinearLayout style="@style/linaer_bottom" >
+            <RadioButton
+                android:id="@+id/ra_collect_bt"
+                style="@style/rbt_bottom"
+                android:drawableTop="@drawable/collect"
+                android:text="收藏"
+                android:checked="false" />
+        </LinearLayout>-->
+<LinearLayout
+    android:layout_width="80dp"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/ra_collect_bt"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/collect"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:ellipsize="marquee"
+        android:textSize="14sp"
+        android:text="收藏"/>
+</LinearLayout>
+        <LinearLayout style="@style/linaer_bottom" >
+            <RadioButton
+                android:onClick="click2"
+                style="@style/rbt_bottom"
+                android:drawableTop="@drawable/h_baoming"
+                android:text="报名参加" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_comments"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_above="@+id/bottomList"
+        android:layout_alignParentStart="true">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

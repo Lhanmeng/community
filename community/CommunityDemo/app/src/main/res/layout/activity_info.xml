@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".activity.PersonalInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:background="@color/index"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+        <ImageButton
+            android:onClick="Back"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:background="@drawable/back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/title"
+            android:textSize="25sp"
+            android:text="修改密码"/>
+    </LinearLayout>
+    <!-- 信息显示 -->
+  <!--  <LinearLayout style="@style/leba_bg_layout">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/boder">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/username"/>
+            <View
+                android:layout_width="2dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="#e1e7ea"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="4dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:hint="用户名"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/boder">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pwd"/>
+            <View
+                android:layout_width="2dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="#e1e7ea"
+                android:layout_gravity="center_horizontal" />
+            <EditText
+                android:id="@+id/et_new_pass"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="4dp"
+                android:singleLine="true"
+                android:hint="请输入新密码"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/boder">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pwd"/>
+            <View
+                android:layout_width="2dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="#e1e7ea"
+                android:layout_gravity="center_horizontal" />
+            <EditText
+                android:id="@+id/et_new_pass2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="4dp"
+                android:singleLine="true"
+                android:hint="请再次输入新密码"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="307dp"
+        android:layout_height="106dp"
+        android:orientation="horizontal">
+        <Button
+            android:text="确定修改"
+            android:textColor="@color/black"
+            android:onClick="changeInfo"
+            android:layout_gravity="center"
+            android:background="@drawable/login_editbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"/>
+    </LinearLayout>
+       <!-- <LinearLayout style="@style/leba_bg_single_layout">
+           <EditText
+               android:id="@+id/et_username"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:text=""
+               android:textSize="16.0dip"
+               android:layout_weight="1.33" />
+        </LinearLayout>-->
+
+    <!-- 密码修改 -->
+   <!-- <LinearLayout style="@style/leba_bg_layout">
+
+        <LinearLayout style="@style/leba_bg_single_layout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:layout_weight="1.0"
+                android:text="新密码"
+                android:textColor="@color/text_color"
+                android:textSize="16.0dip" />
+
+            <EditText
+
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:inputType="textPassword"
+                android:textSize="16.0dip"
+                android:layout_weight="1.71" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="@drawable/leba_shape_line" />
+        <LinearLayout style="@style/leba_bg_single_layout">
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.0dip"
+                android:layout_weight="1.0"
+                android:text="密码确认"
+                android:textColor="@color/text_color"
+                android:textSize="16.0dip" />
+
+            <EditText
+                android:id="@+id/et_new_pass2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text=""
+                android:textSize="16.0dip"
+                android:inputType="textPassword"
+                android:layout_weight="1.99" />
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+</LinearLayout>-->
+
+</LinearLayout>

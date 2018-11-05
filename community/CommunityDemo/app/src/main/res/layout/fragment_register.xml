@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- padding 内边距   layout_margin 外边距
+                    android:layout_alignParentTop 布局的位置是否处于顶部 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="15dip"
+        android:layout_height="200dp">
+       <!-- <ImageView
+            android:background="@drawable/drlogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center" />-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:id="@+id/userimage1"
+            android:src="@drawable/drlogo"
+            app:civ_border_width="0dp"
+            app:civ_border_color="@color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="161dp"
+        android:orientation="vertical"
+        android:padding="15dip"
+        android:layout_margin="15dip">
+
+        <!-- 账号 -->
+        <LinearLayout
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/username"/>
+            <!--    <View
+                    android:layout_width="1dip"
+                    android:layout_height="20dip"
+                    android:background="#9aa1a4"
+                    android:layout_gravity="center_horizontal" />-->
+
+            <EditText
+
+                android:id="@+id/username"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:singleLine="true"
+                android:inputType="text"
+                android:hint="请输入用户名"/>
+
+
+        </LinearLayout>
+        <!--账号密码-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/login_password_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pwd"/>
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="304dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:hint="请输入密码" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pwd"/>
+            <EditText
+                android:id="@+id/password2"
+                android:layout_width="304dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:hint="请确认密码" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1">
+        <Button
+           android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:background="@drawable/login_editbutton"
+            android:text="注册"
+            android:layout_weight="0.75" />
+    </LinearLayout>
+
+    <!-- 登录button -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/back"
+            android:text="已有账号 返回登录"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="120dp"
+            android:textColor="#888"
+            android:textColorLink="#FF0066CC" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:background="@color/index"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:background="@drawable/back"/>
+        <TextView
+            android:layout_width="168dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/title"
+            android:textSize="25sp"
+            android:text="社团招新" />
+        <ImageButton
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/share"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="我校社团嘉年华暨纳新节即将开始"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="发布时间：2016-10-18
+
+责任编辑：钱安华 文章来源：本站原创
+
+    又是一年社团纳新时，10月13、14日，为期两天的社团嘉年华暨纳新节活动在我校三期公寓前隆重举行。"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="3dp"
+      android:text="   今年社团嘉年华共有70个社团参与。触点工作室、妙思黎彩妆培训社、星星影视社、极限小轮车社团、Face o创•翼协会等均为2013年刚建立的新社团，第一次参加纳新活动，他们下足了功夫。极限小轮车社团的成员们在纳新现场进行流动式表演，Face o创•翼协会的成员们则扮成几个可爱的充气玩偶……成立较早的社团更是不甘示弱：话剧团派出了可爱的“大熊”、轮滑社和滑板社的成员们踩着滑轮、滑板发放社团宣传页、采薇文学社现场演奏起了古筝、吉他协会现场弹唱，ACG动漫社进行了Cosplay巡游……充分展现了社团的风采和学生们丰富多彩的校园生活。
+   今年，我校在纳新现场设置了舞台，每个社团都可以进行节目展示。非凡音乐节也来到现场助阵，校园乐队的精彩表演吸引了众多学生驻足观看。同时，今年社团嘉年华在各社团纳新展台处设置了印花，凡参加舞台大型活动的同学，均可以获得印花，集齐一定数量的印花可在校学生会社联服务台兑换奖品。"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="   今年社团纳新，学校42网首页还开通了社团在线报名，多渠道的报名渠道为更多学生加入社团提供了方便。"/>
+    </LinearLayout>
+
+</LinearLayout>

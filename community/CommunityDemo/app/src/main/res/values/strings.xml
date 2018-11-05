@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CommunityDemo</string>
+//登录
+    <string name="login_register_link">没有帐号？ <a href="#" mce_href="#">注册</a></string>
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">下一步</string>
+    <string name="skip">跳过</string>
+    <string name="start">进入</string>
+
+  <!--  <string name="slide_1_title">Lonely</string>
+    <string name="slide_2_title">Meet</string>
+    <string name="slide_3_title">Fall in love at first sight</string>-->
+    <string name="slide_1_title">大学生活无聊吗</string>
+    <string name="slide_2_title">出去走走吧</string>
+    <string name="slide_3_title">和志同道合的朋友们一起</string>
+    <string name="play_again">开启社团之旅</string>
+</resources>

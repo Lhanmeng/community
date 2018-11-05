@@ -1,0 +1,63 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".activity.ActivityIndex" >
+
+    <LinearLayout
+        android:id="@+id/fragmentRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/bottomList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout style="@style/linaer_bottom" >
+            <RadioButton
+                android:id="@+id/ra_shouye_bt"
+                style="@style/rbt_bottom"
+                android:drawableTop="@drawable/index"
+                android:text="首页"
+                android:textColor="@color/colorMain"
+                android:checked="false" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linaer_bottom" >
+
+            <RadioButton
+                android:id="@+id/ra_collect_bt"
+                style="@style/rbt_bottom"
+                android:drawableTop="@drawable/huodong"
+                android:text="活动"
+                android:checked="false" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linaer_bottom" >
+
+            <RadioButton
+                android:id="@+id/ra_search_bt"
+                style="@style/rbt_bottom"
+                android:drawableTop="@drawable/xiaoxi"
+                android:text="消息" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/linaer_bottom" >
+
+            <RadioButton
+                android:id="@+id/ra_wo_bt"
+                style="@style/rbt_bottom"
+                android:drawableTop="@drawable/wo"
+                android:text="我" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
